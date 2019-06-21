@@ -9,6 +9,7 @@
 #include <QTextEdit>
 #include "singlelinkedcircularlist.h"
 #include "node.h"
+#include "test.h"
 
 namespace Ui {
 class MainWindow;

@@ -32,7 +32,8 @@ SOURCES += \
         organization.cpp \
         project.cpp \
 		node.tpp \
-		singlelinkedcircularlist.tpp
+		singlelinkedcircularlist.tpp \
+    test.cpp
 
 HEADERS += \
         component.h \
@@ -41,7 +42,8 @@ HEADERS += \
         node.h \
         organization.h \
         project.h \
-        singlelinkedcircularlist.h \
+        singlelinkedcircularlist.h \ \
+    test.h
 
 FORMS += \
     mainwindow.ui
