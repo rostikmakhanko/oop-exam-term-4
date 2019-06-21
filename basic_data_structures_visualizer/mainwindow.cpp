@@ -14,6 +14,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(size());
 
+    test=new Test();
+    test->start();
+
     list=new SingleLinkedCircularList<int>();
 
     int x1=50,y1=200,x2=100,y2=200;

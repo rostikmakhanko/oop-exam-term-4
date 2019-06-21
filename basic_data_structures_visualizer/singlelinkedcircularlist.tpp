@@ -183,3 +183,19 @@ QString SingleLinkedCircularList<T>::to_string()
     }
     return ans;
 }
+
+template <typename T>
+QVector<T> SingleLinkedCircularList<T>::to_vector()
+{
+    QVector<T> ans;
+    if (size==0) return ans;
+    Node<T> *cur_node=head;
+    ans.push_back(cur_node->value);
+    cur_node=cur_node->next;
+    while (cur_node!=head)
+    {
+        ans.push_back(cur_node->value);
+        cur_node=cur_node->next;
+    }
+    return ans;
+}

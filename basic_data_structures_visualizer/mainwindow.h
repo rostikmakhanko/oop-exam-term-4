@@ -36,6 +36,8 @@ private:
 
     QVector<QTextEdit*> nodes;
 
+    Test *test;
+
 protected:
     void paintEvent(QPaintEvent *paint_event);
 

@@ -2,6 +2,7 @@
 #define SINGLELINKEDCIRCULARLIST_H
 #include "node.h"
 #include <QString>
+#include <QVector>
 
 template <typename T>
 class SingleLinkedCircularList
@@ -37,6 +38,8 @@ public:
     void clear();
 
     QString to_string();
+
+    QVector<T> to_vector();
 
 };
 

@@ -10,6 +10,7 @@ private:
 
 public:
     Organization();
+    Organization(QString name,int employee_count);
 
     QString get_name()
     {
