@@ -3,16 +3,16 @@
 #include "node.h"
 #include <QString>
 
-
+template <typename T>
 class SingleLinkedCircularList
 {
 public:
     SingleLinkedCircularList();
-    SingleLinkedCircularList(int value);
-    ~SingleLinkedCircularList();
+    SingleLinkedCircularList(T value);
+    ~SingleLinkedCircularList(){};
 
 public:
-    Node *head,*tail;
+    Node<T> *head,*tail;
     int size;
 
 public:
@@ -22,11 +22,11 @@ public:
         return size;
     }
 
-    void push_back(int value);
+    void push_back(T value);
 
-    void push_front(int value);
+    void push_front(T value);
 
-    void insert(int value,int position);
+    void insert(T value,int position);
 
     void pop_back();
 

@@ -1,12 +1,14 @@
 #include "node.h"
 
-Node::Node()
+template <typename T>
+Node<T>::Node()
 {
     next=nullptr;
     value=0;
 }
 
-Node::Node(int value)
+template <typename T>
+Node<T>::Node(T value)
 {
     next=nullptr;
     this->value=value;

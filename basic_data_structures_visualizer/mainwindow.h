@@ -26,7 +26,7 @@ public:
 private:
     Ui::MainWindow *ui;
 
-    SingleLinkedCircularList *list;
+    SingleLinkedCircularList<int> *list;
 
     int get_element();
     int get_position();

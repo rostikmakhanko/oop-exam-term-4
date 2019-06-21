@@ -5,6 +5,7 @@
 #include <QtWidgets>
 #include <QDebug>
 #include <iostream>
+#include "singlelinkedcircularlist.tpp"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(size());
 
-    list=new SingleLinkedCircularList();
+    list=new SingleLinkedCircularList<int>();
 
     int x1=50,y1=200,x2=100,y2=200;
     for (int i=0;i<10;i++)
@@ -61,7 +62,7 @@ void MainWindow::paintEvent(QPaintEvent *paint_event)
             nodes[i]->setVisible(false);
         if (list->get_size()>0)
         {
-            Node *cur_node=list->head;
+            Node<int> *cur_node=list->head;
             int i=0;
             nodes[i]->setVisible(true);
             nodes[i]->setText(QString::number(cur_node->value));

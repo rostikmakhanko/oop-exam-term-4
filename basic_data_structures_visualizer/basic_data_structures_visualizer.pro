@@ -29,10 +29,10 @@ SOURCES += \
         list.cpp \
         main.cpp \
         mainwindow.cpp \
-        node.cpp \
         organization.cpp \
         project.cpp \
-        singlelinkedcircularlist.cpp
+		node.tpp \
+		singlelinkedcircularlist.tpp
 
 HEADERS += \
         component.h \
@@ -41,7 +41,7 @@ HEADERS += \
         node.h \
         organization.h \
         project.h \
-        singlelinkedcircularlist.h
+        singlelinkedcircularlist.h \
 
 FORMS += \
     mainwindow.ui

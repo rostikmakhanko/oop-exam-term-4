@@ -1,14 +1,15 @@
 #ifndef NODE_H
 #define NODE_H
 
-
+template <typename T>
 class Node
 {
 public:
     Node();
-    Node(int value);
+    Node(T value);
+    ~Node(){}
     Node *next;
-    int value;
+    T value;
 };
 
 #endif // NODE_H
